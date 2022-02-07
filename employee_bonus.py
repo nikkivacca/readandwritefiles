@@ -13,5 +13,5 @@ for record in employee_file:
     print('Last Name:' + record[2] )
     print('Salary: $' + record[3] )
     print('Bonus: $' + format(bonus,'.2f'))
-    print('Total Pay: $' + format(total_pay, '.2f') + '\n')
+    print('Total Pay: ' + "${:,.2f}".format(total_pay, '.2f') + '\n')
 
